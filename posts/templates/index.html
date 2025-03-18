@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/posts/new/">NEW</a>
-    {% for post in posts %}
-        <p>{{post}}</p>
-        <a href="/posts/{{post.id}}">detail</a>
+    <a href="/posts/new/">NEW</a> <!-- 새로운 게시물 작성 페이지로 이동 -->
+    {% for post in posts %} <!-- 모든 게시물 반복 -->
+        <p>{{post}}</p> <!-- 게시물 내용 표시 -->
+        <a href="/posts/{{post.id}}">detail</a> <!-- 게시물 상세 페이지로 이동 -->
         <hr>
-    {% endfor %}
+    {% endfor %} <!-- 반복 종료 -->
 </body>
 </html>
