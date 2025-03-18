@@ -60,7 +60,7 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-- admin에 모데 등록 (`admin.py`)
+- admin에 모델델 등록 (`admin.py`)
 ```python
 from django.contrib import admin
 from .models import Post
