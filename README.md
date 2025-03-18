@@ -38,9 +38,19 @@ INSTALLED_APPS = [
 
 ## 2. CRUD
 - modeling (`models.py`)
+
 ```python
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
 ```
-- 
+
+- migration (`migrations`)
+
+```shell
+# 번역본 생성
+python manage.py makemigrations
+
+#DB에 반영
+python manage.py migrate 
+```
