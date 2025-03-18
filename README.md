@@ -6,7 +6,7 @@
     - `source venv/Scripts/activate`
 - `README.md`
 
-## 1. Django 프로젝트
+## 1. Django
 
 1. django 설치
 ```shell
