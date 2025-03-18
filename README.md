@@ -35,3 +35,12 @@ INSTALLED_APPS = [
     '<app-name>',
 ]
 ```
+
+## 2. CRUD
+- modeling (`models.py`)
+```python
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+```
+- 
