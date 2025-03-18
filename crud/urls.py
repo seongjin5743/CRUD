@@ -6,7 +6,7 @@ from posts import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Read(전체)
-    path('index/', views.index),
+    path('posts/', views.index),
     # Read(1)
     path('posts/<int:id>/', views.detail),
     # posts/1/
@@ -19,4 +19,8 @@ urlpatterns = [
 
     # delete
     path('posts/<int:id>/delete/', views.delete),
+
+    # update
+    path('posts/<int:id>/edit/', views.edit),
+    path('posts/<int:id>/update/', views.update),
 ]
