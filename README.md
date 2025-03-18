@@ -54,3 +54,16 @@ python manage.py makemigrations
 #DB에 반영
 python manage.py migrate 
 ```
+
+- create super user
+```shell
+python manage.py createsuperuser
+```
+
+- admin에 모데 등록 (`admin.py`)
+```python
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+```
