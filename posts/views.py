@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .models import Post
 
@@ -17,3 +17,15 @@ def detail(request, id):
         'post': post,
     }
     return render(request, 'detail.html', context)
+
+def new(request):
+    return render(request, 'new.html')
+
+def create(request):
+    title = request.GET.get('title')
+    content = request.GET.get('content')
+    post = Post()
+    post.title = title
+    post.content = content
+    post.save()
+    return redirect(f'/posts/{post.id}/')
