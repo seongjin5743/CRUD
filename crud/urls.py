@@ -16,4 +16,7 @@ urlpatterns = [
     # create
     path('posts/new/', views.new),
     path('posts/create/', views.create),
+
+    # delete
+    path('posts/<int:id>/delete/', views.delete),
 ]
