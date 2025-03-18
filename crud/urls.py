@@ -6,6 +6,8 @@ from posts import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     
+    path('', views.temp),
+    
     # Read(전체)
     path('posts/', views.index),
 

@@ -50,3 +50,6 @@ def update(request, id):
     post.content = content  # 내용 설정
     post.save()  # 게시물 저장
     return redirect(f'/posts/{post.id}/')  # 상세 페이지로 리다이렉트
+
+def temp(request):
+    return redirect('/posts/') # posts/로 리다이렉트
